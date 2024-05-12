@@ -10,8 +10,7 @@ function re(){
     // document.getElementById('carouselExampleAutoplaying').style='margin-top: 10vh; ' };
  }
   function rep(){
-    document.getElementById('dav').innerHTML='Search : <input type="text" name="clor" id="tr" list="clor" >  <svg class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7" onclick="search()"id="svg2"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg> <datalist id="color"><option value="red">red</option><option value="pink">pink</option><option value="olive">olive</option><option value="black">black</option><option value="aqua">aqua</option></datalist>  <button onclick="retr()" style="border:1px solid  rgb(129, 182, 163);margin-left:5% ;padding:1%;">Clear Search Bar</button>';
-    // document.getElementById('tr').value=''
+    document.getElementById('dav').innerHTML='<div style="display: flex;"><div class="repair"> Search : <input type="text" name="clor" id="tr" list="clor" ></div>  <svg id="svg2" class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7" onclick="search()"id="svg2"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg> <datalist id="color"><option value="red">red</option><option value="pink">pink</option><option value="olive">olive</option><option value="black">black</option><option value="aqua">aqua</option></datalist>  <button onclick="retr()" class="clear">Clear Search Bar</button>;</div>'    // document.getElementById('tr').value=''
   
   }
   function retr(){
