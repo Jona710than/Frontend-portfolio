@@ -22,6 +22,9 @@ body{
     color: black;
     font-weight:900 ;
  }
+ .class{
+  display: flex;
+ }
  
  .scroll{
     background-color: #fed9ff;
@@ -525,11 +528,16 @@ footer .bottom-details .bottom_text{
 }
 
 @media screen and (max-width:500px) {
-* {
-     width: 100px;
-  }
+html,body{
+  margin: 0%;
+  padding: 0%;
+  
+}
+.class{
+ /* flex-wrap: wrap; */
+}
   .las{
-     margin-top: 110%;
+     margin-top: 100%;
   }
   .para > div{
      font-size-adjust: 0.58;
@@ -554,8 +562,8 @@ footer .bottom-details .bottom_text{
    nav{
     top: 0;
     position: fixed;
-    z-index: 10;
-    width: 74%;
+    z-index: 100;
+    width: 75%;
     /* height: 1px; */
     border: 1px solid transparent; 
     box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(255,255,255,0.15);
@@ -594,7 +602,9 @@ footer .bottom-details .bottom_text{
   font-size: 10px; margin-top: -2%;
 }
 .dotmenu{
-  width: 90%; position: absolute; left: 70vw;top: -20vh;
+  width: 100%;
+   position: absolute;
+    left: 70vw;top: -20vh;
 }
 .basic{
   display: flex;
@@ -611,7 +621,7 @@ footer .bottom-details .bottom_text{
 .red-dot{
   height: 8px;
   width: 8px;
-  background-color: red;
+  background-color: rgb(238, 225, 225);
   border-radius: 100%;
 }#services{
   font-size: 20px;
@@ -620,8 +630,8 @@ footer .bottom-details .bottom_text{
 
 .li:hover #color{
   
-  width: 30vw;
-   height: 80px;
+  width: 46vw;
+   height: 180px;
    overflow-x: hidden;
   position: absolute;
   margin-top: 2.5%;
@@ -659,7 +669,6 @@ footer .bottom-details .bottom_text{
     margin-left: 30%;
   }
 }
-
 
 
 
