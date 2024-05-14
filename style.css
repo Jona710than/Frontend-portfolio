@@ -524,9 +524,9 @@ footer .bottom-details .bottom_text{
   }
 }
 
-@media all and (max-width:500px) {
-  body {
-     width: 100%;
+@media screen and (max-width:500px) {
+* {
+     width: 100px;
   }
   .las{
      margin-top: 110%;
