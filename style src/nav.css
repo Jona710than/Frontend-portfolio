@@ -1,3 +1,7 @@
 nav{
     display: flex;
 }
+nav .nav-img1{
+    height: 70px;
+    width: 100px;
+}
