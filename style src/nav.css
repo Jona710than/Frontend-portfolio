@@ -1,7 +1,14 @@
+body{
+    width: 100%;
+}
 nav{
     display: flex;
+    justify-content: space-around;
 }
 nav .nav-img1{
-    height: 70px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+}nav >div{
+    display: flex;
+    gap: 50px;
 }
