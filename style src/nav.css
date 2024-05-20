@@ -4,11 +4,26 @@ body{
 nav{
     display: flex;
     justify-content: space-around;
+    background-color:white ;
+    box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(255,255,255,0.15);
+    padding-bottom: 1%;
 }
 nav .nav-img1{
-    height: 50px;
-    width: 50px;
-}nav >div{
+    height: 40px;
+    width: 40px;
+}
+nav div{
     display: flex;
     gap: 50px;
+    margin-top: 1%;
+    text-decoration: none;
 }
+nav div a{
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.fa-bar{
+   display: none;
+}
+
+@media all and (max-width:500px)y
