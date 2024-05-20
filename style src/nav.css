@@ -1,5 +1,6 @@
 body{
     width: 100%;
+    margin: 0;
 }
 nav{
     display: flex;
@@ -7,23 +8,67 @@ nav{
     background-color:white ;
     box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(255,255,255,0.15);
     padding-bottom: 1%;
+    /* position: fixed; */
 }
 nav .nav-img1{
     height: 40px;
     width: 40px;
+    margin-left: -10%;
 }
-nav div{
+nav .logo {
+    display: flex;
+    margin-top: 1%;
+}
+nav .logo span{
+    /* margin-top: 10%; */
+    font-size: 2rem;
+}
+nav .links{
     display: flex;
     gap: 50px;
-    margin-top: 1%;
+    margin-top: 1.5%;
     text-decoration: none;
+    margin-left: -10%;
 }
-nav div a{
+nav .links a{
     font-size: 1.2rem;
     text-decoration: none;
+}
+nav .nav-img2{
+    margin-top: 12%;
 }
 .fa-bar{
    display: none;
 }
-
-@media all and (max-width:500px)y
+input.search {
+    width: 100%;
+    padding: 2%;
+   border: none;
+   /* width: 100%;   */
+   /* padding: 12px 40px;   */
+   display: inline-block;  
+   outline: none;
+   
+}
+/* textarea{
+    border: none;
+    outline: none;
+} */
+.scroll{
+    background-color: #fed9ff;
+      width: 300px;
+      height: 500px;
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align: center;
+      padding: 10px;
+ }
+ i{
+    padding-top:1% ;
+ }
+ marquee{
+    transition: 1ms;
+ }
+@media all and (max-width:360px){
+    
+}
