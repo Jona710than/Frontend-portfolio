@@ -62,7 +62,7 @@ input.search {
       border: 1px solid #cecaca;
       height: 3%;
       padding: 1%; 
-      width:100%;
+      width:10%;
 }
 .mark{
     display: flex;
@@ -94,9 +94,7 @@ input.search {
  i{
     padding-top:1% ;
  }
- marquee{
-    /* transition: 10000ms; */
- }
+
 @media all and (max-width:360px){
      
     nav {
