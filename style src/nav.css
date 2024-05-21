@@ -95,7 +95,7 @@ input.search {
     padding-top:1% ;
  }
 
-@media all and (max-width:500px){
+@media screen and (max-width:500px){
      
     nav {
         width: 500px;
