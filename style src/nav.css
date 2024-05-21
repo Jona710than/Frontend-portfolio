@@ -61,8 +61,8 @@ input.search {
      background-color: white;
       border: 1px solid #cecaca;
       height: 3%;
-      padding: 1%; 
-      width:10%;
+      /* padding: 1%;  */
+      width:100%;
 }
 .mark{
     display: flex;
