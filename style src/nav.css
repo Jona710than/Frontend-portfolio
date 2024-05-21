@@ -23,12 +23,17 @@ nav .logo span{
     /* margin-top: 10%; */
     font-size: 2rem;
 }
+.close{
+    margin-left: 80%; 
+    display: none;
+}
 nav .links{
     display: flex;
     gap: 50px;
     margin-top: 1.5%;
     text-decoration: none;
     margin-left: -10%;
+    list-style: none;
 }
 nav .links a{
     font-size: 1.2rem;
@@ -48,7 +53,29 @@ input.search {
    /* padding: 12px 40px;   */
    display: inline-block;  
    outline: none;
+  
    
+}
+.search{
+    display: flex;
+     background-color: white;
+      border: 1px solid #cecaca;
+      height: 3%;
+      padding: 1%; 
+      width:100%;
+}
+.mark{
+    display: flex;
+     gap: 2px;
+      width: 100%;
+      margin-top: 1%;
+}
+.marquee-container{
+    display: flex;
+}
+.flag-toggle{
+    display: flex;
+    gap: 50px;
 }
 /* textarea{
     border: none;
@@ -59,16 +86,74 @@ input.search {
       width: 300px;
       height: 500px;
       overflow-x: hidden;
-      overflow-y: auto;
+      overflow-y: hidden;
       text-align: center;
       padding: 10px;
  }
+ 
  i{
     padding-top:1% ;
  }
  marquee{
-    transition: 1ms;
+    /* transition: 10000ms; */
  }
 @media all and (max-width:360px){
+     
+    nav {
+        width: 360px;
+        display: block;
+        text-align: center;
+        position: fixed;
+        z-index: 5;
+        /* margin-top: 1%; */
+    }.logo{
+        /* text-align: center; */
+        margin-left: 10%;
+    }
+    .fa-bar{
+        display: block;
+        margin-top: 2%;
+        margin-left: 30%;
+    }
+    nav .links{
+        display: none;
+        
+        /* gap: 50px;
+        margin-top: 1.5%;
+        text-decoration: none;
+        margin-left: -10%; */
+    }
+    #links{
+        /* display: block; */
+        text-align: left;
+        margin-left: 5%;
+        list-style: none;
+    }
+    .flag-toggle{
+        display: none;
+        
+    }
+    .mark{
+        margin-top: 14%;
+        display: block;
+        width: 360px;
+         /* gap: 2px;
+          
+          margin-top: 1%; */
+    }
+    .search{
+        display: flex;
+         background-color: white;
+          border: 1px solid #cecaca;
+          height: 3%;
+          padding: 1%; 
+          width:350px
+    }
+    .marquee-container{
+        display: none;
+    }
+    .close{
+        display: block;
+    }
     
 }
