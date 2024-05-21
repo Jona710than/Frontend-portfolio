@@ -98,6 +98,7 @@ input.search {
 @media screen and (max-width:414px){
     body{
         width: 414px; 
+        margin: 0;
     } 
     nav {
         width: 414px;
@@ -147,7 +148,7 @@ input.search {
           border: 1px solid #cecaca;
           height: 3%;
           padding: 1%; 
-          width:417px;
+          width: 415px;
     }
     .marquee-container{
         display: none;
