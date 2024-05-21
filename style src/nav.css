@@ -95,10 +95,10 @@ input.search {
     padding-top:1% ;
  }
 
-@media all and (max-width:360px){
+@media all and (max-width:500px){
      
     nav {
-        width: 360px;
+        width: 500px;
         display: block;
         text-align: center;
         position: fixed;
