@@ -95,10 +95,10 @@ input.search {
     padding-top:1% ;
  }
 
-@media screen and (max-width:500px){
+@media screen and (max-width:414px){
      
     nav {
-        width: 500px;
+        width: 414px;
         display: block;
         text-align: center;
         position: fixed;
@@ -145,7 +145,7 @@ input.search {
           border: 1px solid #cecaca;
           height: 3%;
           padding: 1%; 
-          width:350px
+          width:408px
     }
     .marquee-container{
         display: none;
