@@ -23,8 +23,10 @@
       <div class="fa-bar" id='fa-bar' onclick="menu()"><i onclick="menu()" class="fa fa-bars fa-2x"></i></div>
      
      </div>
+     
       <div class="links" id="links">
-        <li class="close"><i class="fa fa-close " onclick="close()"></i></li>
+      
+        <li class="close" onclick="clse()" id="ear"><i onclick="clse()" class="fa fa-close " ></i></li>
         <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
         <li><a href="#"><i class="fa fa-wrench"></i> services</a></li>
         <li><a href="#"><i class="fa fa-phone"></i> Contacts</a></li>
@@ -32,7 +34,7 @@
       </div>
        <div  class="flag-toggle">
         <div style="margin-top: 10%;">
-          <i class="fa fa-sun o fa-2x" onclick="on()" style="margin-top: 10%; font-size: 1.5rem; color: rgb(47, 47, 90);"></i>
+          <i class="fa fa-sun o fa-2x" onclick="darkmode()" style="margin-top: 10%; font-size: 1.5rem; color: rgb(47, 47, 90);"></i>
           <i onclick="off()" id="off" class="fa fa-moon o"  style="margin-top: 10%; font-size: 1.5rem; color: rgb(47, 47, 90);" ></i>
         </div>
         <a href="https://www.google.com/search?q=nigeria"><img src="./images/nigeria.png" alt="icon" class="nav-img2"></a>
@@ -40,13 +42,13 @@
       
     </nav>
     
-    <div class="mark" style="">
+    <div class="mark" >
       <div class="search">
         <i class="fa fa-search fa-2x"></i><input class="search" type="search" placeholder="Search..." ><i class="fab fa-github fa-2x"></i><i class="fa fa-bell fa-2x"></i><i class="fab fa-light fa-2x"></i></div>
     
       <div class="marquee-container">
         <div class="scroll">
-          <marquee behavior="scroll" direction="down">
+          <marquee behavior="scroll" direction="down" scrollamount="50">
             <img src="../images/portfolio (1).jpg" style="width: 100%;height: 70%;border-radius: 2%;"> <br>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non impedit quam ab maiores dolorem praesentium dicta architecto neque velit quia, distinctio repudiandae reiciendis est vel iusto recusandae? Assumenda, quis perferendis.
             Odit ipsa ipsam libero voluptate praesentium ex nulla dolore veritatis, minus explicabo id est, autem placeat consectetur, reiciendis eum esse ab natus excepturi facere. Quibusdam possimus similique libero beatae culpa!
@@ -57,7 +59,7 @@
           </div>
       </li>
       <div class="scroll">
-        <marquee behavior="scroll" direction="up">
+        <marquee behavior="scroll" direction="up" scrollamount="50">
           <img src="../images/portfolio (1).jpg" style="width: 100%;height: 70%;border-radius: 2%;"> <br>
           
         m, beatae minima consequuntur sit magnam cum sapiente voluptatum voluptatem inventore quae? At, explicabo eligendi.
@@ -71,6 +73,7 @@
 
  </div>
       
+  <div id="blind"></div>
   
  </body>
  </html>

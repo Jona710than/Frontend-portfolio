@@ -26,28 +26,32 @@ function re(){
      function clear() {
       if ( document.getElementById("tr").value="") {
         remove(ans) 
-      }
+      } 
      }
   }
-  function off() {
-   var body = document.getElementsByTagName('body')[0];
-  //  var nav = document.getElementsByTagName('nav')[0];
-  body.style.backgroundColor = "black";
-  // nav.style.backgroundColor = "black";
-//   i.style.backgroundColor = "white";
-  }
-  function on() {
-   var body = document.getElementsByTagName('body')[0];
-   var nav = document.getElementsByTagName('nav')[0];
-  body.style.backgroundColor = "white";
-  nav.style.backgroundColor = "white";
-  }
+//   function off() {
+//    var body = document.getElementsByTagName('body')[0];
+//   //  var nav = document.getElementsByTagName('nav')[0];
+//   body.style.backgroundColor = "black";
+//   // nav.style.backgroundColor = "black";
+// //   i.style.backgroundColor = "white";
+//   }
+//   function on() {
+//    var body = document.getElementsByTagName('body')[0];
+//    var nav = document.getElementsByTagName('nav')[0];
+//   body.style.backgroundColor = "white";
+//   nav.style.backgroundColor = "white";
+//   }
+function darkmode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
 
 function menu(){
   document.getElementById('links').style.display='block';
  
 }
-function close(){
-  document.getElementsByClassName('links').style.display='none';
- 
-}
+
+function clse(){
+  document.getElementById('links').style.display='none';
+ }

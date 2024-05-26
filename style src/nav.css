@@ -56,12 +56,19 @@ input.search {
   
    
 }
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+ 
+    /* display: block; */
+
 .search{
     display: flex;
      background-color: white;
       border: 1px solid #cecaca;
       height: 3%;
-      /* padding: 1%;  */
+      padding: 1%; 
       width:100%;
 }
 .mark{
@@ -114,7 +121,7 @@ input.search {
     .fa-bar{
         display: block;
         margin-top: 1%;
-        margin-left: 30%;
+        margin-left: 35%;
     }
     nav .links{
         display: none;
@@ -133,6 +140,9 @@ input.search {
     .flag-toggle{
         display: none;
         
+    }
+    .menu{
+        display: block;
     }
     .mark{
         margin-top: 14%;
@@ -156,5 +166,11 @@ input.search {
     .close{
         display: block;
     }
-    
+    #blind{
+        position: absolute;
+        top: 0;
+        z-index: 5;
+    }
+        
 }
+
