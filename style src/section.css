@@ -1,0 +1,11 @@
+.intro{
+    font-size: 3rem;
+    padding-left: 5%;
+}
+@media screen and (max-width:414px){
+    .intro{
+        font-size: 2rem;
+        width: 100%;
+        /* padding-left: 5%; */
+    }
+}

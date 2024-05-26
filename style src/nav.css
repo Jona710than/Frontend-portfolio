@@ -1,6 +1,7 @@
 body{
     width: 100%;
     margin: 0;
+    /* background-color: rgb(10, 138, 138); */
 }
 nav{
     display: flex;
@@ -34,10 +35,12 @@ nav .links{
     text-decoration: none;
     margin-left: -10%;
     list-style: none;
+    
 }
 nav .links a{
     font-size: 1.2rem;
     text-decoration: none;
+    color: rgb(10, 138, 138);
 }
 nav .nav-img2{
     margin-top: 12%;
@@ -67,9 +70,15 @@ input.search {
     display: flex;
      background-color: white;
       border: 1px solid #cecaca;
-      height: 3%;
-      padding: 1%; 
-      width:100%;
+      height: 5%;
+      padding: 3%; 
+      width:95%;
+}
+.top_div{
+    width: 50%;
+}
+::placeholder{
+    font-size: 20px;
 }
 .mark{
     display: flex;
@@ -89,7 +98,7 @@ input.search {
     outline: none;
 } */
 .scroll{
-    background-color: #fed9ff;
+    background-color:  rgb(10, 138, 138);;
       width: 300px;
       height: 500px;
       overflow-x: hidden;
@@ -134,8 +143,16 @@ input.search {
     #links{
         /* display: block; */
         text-align: left;
-        margin-left: 5%;
+        padding-left: 15%;
         list-style: none;
+        /* background-color: bisque; */
+    }
+    #links a{
+       
+        background-color: bisque;
+        padding: 1px 100px;
+        margin-left: -5%;
+        text-align: right;
     }
     .flag-toggle{
         display: none;
