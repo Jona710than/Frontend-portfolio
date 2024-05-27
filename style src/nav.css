@@ -98,7 +98,7 @@ input.search {
     outline: none;
 } */
 .scroll{
-    background-color:  rgb(10, 138, 138);;
+    background-color:  rgb(10, 138, 138);
       width: 300px;
       height: 500px;
       overflow-x: hidden;
@@ -112,11 +112,15 @@ input.search {
  }
 
 @media screen and (max-width:414px){
-    body{
+    html{
         width: 414px; 
-        margin: 0;
+        margin: 0%;
+        padding: 0%;
+        overflow-y: hidden;
+        object-fit: cover;
     } 
     nav {
+        
         width: 414px;
         display: block;
         text-align: center;
@@ -126,6 +130,7 @@ input.search {
     }.logo{
         /* text-align: center; */
         margin-left: 10%;
+        /* width: 414px; */
     }
     .fa-bar{
         display: block;
@@ -150,10 +155,18 @@ input.search {
     #links a{
        
         background-color: bisque;
-        padding: 1px 100px;
+        
+        /* padding-right: 260px ; */
         margin-left: -5%;
-        text-align: right;
+        /* text-align: right; */
     }
+    .links .a{
+        padding-right:300px ;
+    }
+    .links .b{padding-right:288px ;}
+    .links .c{padding-right:283px ;}
+    .links .d{padding-right:243px ;}
+  
     .flag-toggle{
         display: none;
         
@@ -175,7 +188,9 @@ input.search {
           border: 1px solid #cecaca;
           height: 3%;
           padding: 1%; 
-          width: 402px;
+          width: 390px;
+          margin-left: 5%;
+          
     }
     .marquee-container{
         display: none;
@@ -188,6 +203,10 @@ input.search {
         top: 0;
         z-index: 5;
     }
+    input{
+       margin-top: 5px;
+    }
+   
         
 }
 

@@ -16,6 +16,9 @@
     <title>Jonathan Frontend portfolio</title>
 </head>
 <body>
+  <video autoplay muted loop id="myVideo">
+    <source src="./style src/web.mp4" type="video/mp4">
+  </video>
     <nav>
      <div class="logo">
       <img src="./images/j4.png" alt="icon" class="nav-img1">
@@ -27,10 +30,10 @@
       <div class="links" id="links">
       
         <li class="close" onclick="clse()" id="ear"><i onclick="clse()" class="fa fa-close " ></i></li>
-        <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#"><i class="fa fa-wrench"></i> services</a></li>
-        <li><a href="#"><i class="fa fa-phone"></i> Contacts</a></li>
-        <li><a href="#"><i class="fa fa-cloud"></i> Social Media</a></li>
+        <li ><a href="#" class="a"><i class="fa fa-home"></i> Home</a></li>
+        <li ><a href="#" class="b"><i class="fa fa-wrench"></i> services</a></li>
+        <li ><a href="#"  class="c"><i class="fa fa-phone"></i> Contacts</a></li>
+        <li ><a href="#" class="d"><i class="fa fa-cloud"></i> Social Media</a></li>
       </div>
        <div  class="flag-toggle">
         <div style="margin-top: 10%;">
@@ -41,46 +44,56 @@
       </div>
       
     </nav>
-    
+    <section style="position: fixed;">
+      
     <div class="mark" >
 
     
-     <div class="top_div">
-        <div class="search">
-          <i class="fa fa-search fa-2x"></i><input class="search" type="search" placeholder="Search..." ><i class="fab fa-github fa-2x"></i><i class="fa fa-bell fa-2x"></i><i class="fab fa-light fa-2x"></i>
-        </div>
-        <div style="margin-top: 5% ;">  
-          <div class="intro">Frontend_Developer<br>  & UIUX Designer</div>
-          </div>
-     </div>
-      <div class="marquee-container">
-        <div class="scroll">
-          <marquee behavior="scroll" direction="down" scrollamount="50">
-            <img src="../images/portfolio (1).jpg" style="width: 100%;height: 70%;border-radius: 2%;"> <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non impedit quam ab maiores dolorem praesentium dicta architecto neque velit quia, distinctio repudiandae reiciendis est vel iusto recusandae? Assumenda, quis perferendis.
-            Odit ipsa ipsam libero voluptate praesentium ex nulla dolore veritatis, minus explicabo id est, autem placeat consectetur, reiciendis eum esse ab natus excepturi facere. Quibusdam possimus similique libero beatae culpa!
-            Etur excepturi quos, omnis dolorem voluptatibus ad vero repellat atque, non similique fuga? Similique corrupti libero nihil, error fugiat illo totam natus nesciunt quidem, iure nostrum.
-             Mollitia, modi expedita. Commodi sint beatae eos. Maiores ea eos exercitationem porro corrupti quos, deserunt id omnis corporis laboriosam, nisi natus assumenda modi molestiae iusto sint ullam laudantium labore molestias.
-           <video muted autoplay src="./images/istockphoto-1675788340-640_adpp_is.mp4" ></video>
-          </marquee> 
-          </div>
-      </li>
-      <div class="scroll">
-        <marquee behavior="scroll" direction="up" scrollamount="50">
-          <img src="../images/portfolio (1).jpg" style="width: 100%;height: 70%;border-radius: 2%;"> <br>
-          
-        m, beatae minima consequuntur sit magnam cum sapiente voluptatum voluptatem inventore quae? At, explicabo eligendi.
-          Porro quidem rem earum laborum assumenda dolore at tempore, nihil, totam, quisquam accusantium tenetur ex atque temporibus possimus sit fugiat culpa nostrum. Exercitationem modi commodi ipsa possimus reprehenderit eaque magnam.
-         Fugiat, architecto ut dolore dignissimos quas id in fugit vitae veritatis pariatur eum illum commodi officia nihil quia dolores quo unde ex cumque nobis molestias? Molestiae maxime consectetur minima quo?
-      
-        </marquee> 
-        </div>
+      <div class="top_div">
+         <div class="search">
+           <i class="fa fa-search fa-2x"></i><input class="search" type="search" placeholder="Search..." ><i class="fab fa-github fa-2x"></i><i class="fa fa-bell fa-2x"></i><i class="fab fa-light fa-2x"></i>
+         </div>
+         <div style="margin-top: 5% ;">  
+           <div class="intro">
+             <div  style="display: flex; gap: 10px;" >
+               Frontend_Developer<i class="fa fa-computer"></i>
+             </div>
+              <div> & <i class="fa fa-mobile"></i> UIUX Designer</div></div>
+           </div>
+           <div style="display: flex; gap: 30%;">
+             <div class="btn1"><a href="https://github.com/Jona710than/Frontend-portfolio"><i class="fa fa-user"></i>Profile</a></div>
+             <button class="btn2"><a href="../style src/Jonathan Portfolio 1.pdf" download="../style src/Jonathan Portfolio 1.pdf"  target="_blank"><i class="fa fa-download"></i>Download</a> </button>
+           </div>
       </div>
-      <!-- <i class='fas fa-toggle-on' id="on" onclick="on()"></i> -->
-
- </div>
-      
-  <div id="blind"></div>
+       <div class="marquee-container">
+         <div class="scroll">
+           <marquee behavior="scroll" direction="down" scrollamount="50">
+             <img src="../images/portfolio (1).jpg" style="width: 100%;height: 70%;border-radius: 2%;"> <br>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non impedit quam ab maiores dolorem praesentium dicta architecto neque velit quia, distinctio repudiandae reiciendis est vel iusto recusandae? Assumenda, quis perferendis.
+             Odit ipsa ipsam libero voluptate praesentium ex nulla dolore veritatis, minus explicabo id est, autem placeat consectetur, reiciendis eum esse ab natus excepturi facere. Quibusdam possimus similique libero beatae culpa!
+             Etur excepturi quos, omnis dolorem voluptatibus ad vero repellat atque, non similique fuga? Similique corrupti libero nihil, error fugiat illo totam natus nesciunt quidem, iure nostrum.
+              Mollitia, modi expedita. Commodi sint beatae eos. Maiores ea eos exercitationem porro corrupti quos, deserunt id omnis corporis laboriosam, nisi natus assumenda modi molestiae iusto sint ullam laudantium labore molestias.
+            <video muted autoplay src="./images/istockphoto-1675788340-640_adpp_is.mp4" ></video>
+           </marquee> 
+           </div>
+       </li>
+       <div class="scroll">
+         <marquee behavior="scroll" direction="up" scrollamount="50">
+           <img src="../images/portfolio (1).jpg" style="width: 100%;height: 70%;border-radius: 2%;"> <br>
+           
+         m, beatae minima consequuntur sit magnam cum sapiente voluptatum voluptatem inventore quae? At, explicabo eligendi.
+           Porro quidem rem earum laborum assumenda dolore at tempore, nihil, totam, quisquam accusantium tenetur ex atque temporibus possimus sit fugiat culpa nostrum. Exercitationem modi commodi ipsa possimus reprehenderit eaque magnam.
+          Fugiat, architecto ut dolore dignissimos quas id in fugit vitae veritatis pariatur eum illum commodi officia nihil quia dolores quo unde ex cumque nobis molestias? Molestiae maxime consectetur minima quo?
+       
+         </marquee> 
+         </div>
+       </div>
+       <!-- <i class='fas fa-toggle-on' id="on" onclick="on()"></i> -->
+ 
+  </div>
+       
+   <div id="blind"></div>
+    </section>
   
  </body>
  </html>
