@@ -10,7 +10,7 @@ video{
     #myVideo{
         position: fixed;
         /* right: 0; */
-        top: 30%;
+        top: -30%;
         width: 430px;
         height: 140%;
         display: block;
