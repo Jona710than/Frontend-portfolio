@@ -178,6 +178,7 @@ input.searc {
         display: flex;
          background-color: white;
           border: 1px solid #cecaca;
+          box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(255,255,255,0.15);
           height: 3%;
           padding: 1%; 
           width: 332px;
