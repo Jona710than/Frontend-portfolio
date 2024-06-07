@@ -306,10 +306,10 @@ footer{
     .btn1{
         font-size: 20px;
         padding: 10px 30px;
-        margin-left: 40px ;
+        margin-left: 20px ;
         margin-top: 100px;
         font-family: Imprint MT Shadow;
-        border: 2px  solid black ;
+        border: 1px  solid white;
         color: white;
         display: flex;
     }
