@@ -16,7 +16,7 @@
 
 .las{
     /* margin-top: 5%; */
-    height: 130vh;
+    height: 100%;
     position: relative;
     background: #111;
     color: white;
@@ -337,6 +337,13 @@ footer{
         margin-top: 5%;
     } 
     */
+    .las{
+        /* margin-top: 5%; */
+        height: 170vh;
+        position: relative;
+        background: #111;
+        color: white;
+    }
     footer {
         background-color: rgb(10, 138, 138);;
     }
