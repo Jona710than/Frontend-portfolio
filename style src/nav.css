@@ -179,11 +179,15 @@ input.searc {
          background-color: white;
           border: 1px solid #cecaca;
           box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(255,255,255,0.15);
-          height: 3%;
+          height: 5%;
           padding: 1%; 
           width: 332px;
           margin-left:  21%;
           position: fixed;
+          z-index: 5;
+          top: 9%;
+          right: 9%;
+
     }
     .marquee-container{
         display: none;
