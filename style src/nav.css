@@ -48,7 +48,7 @@ nav .nav-img2{
 .fa-bar{
    display: none;
 }
-input.search {
+input.searc {
     width: 100%;
     padding: 2%;
    border: none;
@@ -112,25 +112,20 @@ input.search {
  }
 
 @media screen and (max-width:414px){
-    html{
-        width: 414px; 
-        margin: 0%;
-        padding: 0%;
-        overflow-y: hidden;
-        object-fit: cover;
-    } 
+   
     nav {
         
         width: 414px;
         display: block;
-        text-align: center;
-        position: fixed;
-        z-index: 5;
-        /* margin-top: 1%; */
-    }.logo{
         /* text-align: center; */
-        margin-left: 10%;
-        /* width: 414px; */
+        
+        z-index: 5;
+        padding: 0;
+        
+        
+    }.logo{
+        
+        margin-left: 10%
     }
     .fa-bar{
         display: block;
@@ -140,25 +135,22 @@ input.search {
     nav .links{
         display: none;
         
-        /* gap: 50px;
-        margin-top: 1.5%;
-        text-decoration: none;
-        margin-left: -10%; */
+        
     }
     #links{
-        /* display: block; */
+        
         text-align: left;
         padding-left: 15%;
         list-style: none;
-        /* background-color: bisque; */
+        
     }
     #links a{
        
-        background-color: bisque;
+        background-color: chocolate;
         
-        /* padding-right: 260px ; */
+       color: white;
         margin-left: -5%;
-        /* text-align: right; */
+       
     }
     .links .a{
         padding-right:300px ;
@@ -175,12 +167,12 @@ input.search {
         display: block;
     }
     .mark{
-        margin-top: 14%;
+       
         display: block;
         width: 360px;
-         /* gap: 2px;
-          
-          margin-top: 1%; */
+        position: absolute;
+        top: 50px;
+
     }
     .search{
         display: flex;
@@ -188,8 +180,8 @@ input.search {
           border: 1px solid #cecaca;
           height: 3%;
           padding: 1%; 
-          width: 390px;
-          margin-left: 5%;
+          width: 332px;
+          margin-left:  21%;
           
     }
     .marquee-container{
@@ -198,15 +190,14 @@ input.search {
     .close{
         display: block;
     }
-    #blind{
-        position: absolute;
-        top: 0;
-        z-index: 5;
-    }
+
     input{
        margin-top: 5px;
     }
    
-        
+      .login{
+        width: 330px;
+        background-color: rgba(210, 105, 30, 0.37);
+      }  
 }
 
