@@ -183,7 +183,7 @@ input.searc {
           padding: 1%; 
           width: 332px;
           margin-left:  21%;
-          
+          position: fixed;
     }
     .marquee-container{
         display: none;
