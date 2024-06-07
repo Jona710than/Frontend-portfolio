@@ -330,9 +330,35 @@ footer{
         color: white;
         text-decoration: none;
     }
-    /* .btn1 .btn2:hover{
-        background-color: rgb(6, 165, 33);
-    } */
+    #btns{
+        position: absolute;
+        top: 59%;
+        left: 1%;
+        z-index: 5;
+        text-align: center;
+        gap: 2%; 
+        background-color: #fff;
+        padding-bottom: 13px;
+        padding-top: 3%;
+        /* padding-top: 0; */
+       width: 335px;
+        display: none;
+    }
+    #btns .btn3{
+        font-size: 20px;
+        font-family: Imprint MT Shadow;
+        /* margin-top: 100px; */
+        text-decoration: none;
+        padding: 1%;
+        padding-top: 3%;
+        background-color: rgba(35, 63, 63, 0.151);
+        border: 1px  solid white;
+        color: white;
+        
+    }
+    .btn3 a{
+        text-decoration: none;
+    }
     /* #services{
         margin-top: 5%;
     } 

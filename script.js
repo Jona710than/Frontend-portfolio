@@ -55,3 +55,6 @@ function menu(){
 function clse(){
   document.getElementById('links').style.display='none';
  }
+function btn(){
+document.getElementById('btns').style.display='block';
+}
