@@ -55,6 +55,31 @@ function menu(){
 function clse(){
   document.getElementById('links').style.display='none';
  }
+ function cls(){
+  document.getElementById('btns').style.display='none';
+ }
 function btn(){
-document.getElementById('btns').style.display='block';
+document.getElementById('btns').style.display='flex';
 }
+
+// for my Login
+
+// var nname=('jona', 'stan')
+// function logN() {
+//   document.getElementById('fname').value=nname;
+// }
+// ////////////////////////////////////
+// var bname=('fest', 'elock')
+// function logNn() {
+//   document.getElementById('lname').value=bname;
+// }
+// ////////////////////////////////////////
+// function submit(){
+//   document.getElementById('fname').value=nname;
+//   if(value=nname){
+//     document.write('it worked well');
+//   }else{
+//     alert('wrong');
+//   } 
+//   }
+

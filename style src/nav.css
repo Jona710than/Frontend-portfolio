@@ -166,13 +166,22 @@ input.searc {
     .menu{
         display: block;
     }
+    .top_div{
+        background-image: url(../images/web.jpg);
+        width: 414px;
+        /* height: 41px; */
+         padding-bottom: 100px;
+        padding-top:10px ;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
     .mark{
        
         display: block;
         width: 360px;
         position: absolute;
-        top: 50px;
-
+        top: -100px;
+        /* padding-bottom: 100px; */
     }
     .search{
         display: flex;
@@ -188,6 +197,11 @@ input.searc {
           top: 9%;
           right: 9%;
 
+    }
+    .search:hover{
+        border: 2px solid black ;
+        border-radius: 7px;
+        /* background-color: black; */
     }
     .marquee-container{
         display: none;

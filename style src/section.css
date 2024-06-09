@@ -307,7 +307,7 @@ footer{
         font-size: 20px;
         padding: 10px 30px;
         margin-left: 20px ;
-        margin-top: 100px;
+        /* margin-top: 100px; */
         font-family: Imprint MT Shadow;
         border: 1px  solid white;
         color: white;
@@ -316,7 +316,7 @@ footer{
     .btn2{
         font-size: 20px;
         font-family: Imprint MT Shadow;
-        margin-top: 100px;
+        /* margin-top: 100px; */
         background-color: rgba(35, 63, 63, 0.151);
         border: 1px  solid white;
         color: white;
@@ -332,7 +332,7 @@ footer{
     }
     #btns{
         position: absolute;
-        top: 59%;
+        top: 55%;
         left: 1%;
         z-index: 5;
         text-align: center;
@@ -340,7 +340,7 @@ footer{
         background-color: #fff;
         padding-bottom: 13px;
         padding-top: 3%;
-        /* padding-top: 0; */
+        padding-left: 3%;
        width: 335px;
         display: none;
     }
@@ -364,12 +364,20 @@ footer{
     } 
     */
     .las{
-        /* margin-top: 5%; */
-        height: 185vh;
+        /* margin-top: 50vh; */
+        height: 180vh;
         position: relative;
         background: #111;
         color: white;
     }
+    .container{
+      width: 80%;
+      position: absolute;
+      top: 120%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+ 
     footer {
         background-color: rgb(10, 138, 138);;
     }
