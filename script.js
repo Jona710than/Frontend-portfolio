@@ -61,7 +61,12 @@ function clse(){
 function btn(){
 document.getElementById('btns').style.display='flex';
 }
-
+function contact(){
+  document.getElementById('contact').style.display='block';
+  }
+function cl(){
+  document.getElementById('contact').style.display='none';
+}
 // for my Login
 
 // var nname=('jona', 'stan')

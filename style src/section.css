@@ -364,6 +364,11 @@ footer{
         margin-top: 5%;
     } 
     */
+    .btn0{
+      padding: 2%;
+     
+    }
+    
     .las{
         /* margin-top: 50vh; */
         height: 185vh;
@@ -374,14 +379,17 @@ footer{
     .container{
       width: 80%;
       position: absolute;
-      top: 100%;
+      top: 70%;
       left: 50%;
       transform: translate(-50%,-50%);
   }
- 
+ #contact{
+    padding-bottom: 7%;
+
+ }
   footer{
     position: relative;
-    width: 414px;
+    /* width: 414px; */
     left: 0;
   }
   .content .top .logo-details{
