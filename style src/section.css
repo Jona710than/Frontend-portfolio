@@ -90,7 +90,7 @@
 }
 footer{
     /* position: fixed; */
-    background: #413c64;
+    background: rgb(35, 63, 63);
     width: 100%;
     bottom: 0;
     left: 0;
@@ -287,7 +287,7 @@ footer{
         /* background-color:  rgb(10, 138, 138); */
         background-color:black;
         width: 414px;
-        height:2960px ;
+        /* height:2960px ; */
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -366,7 +366,7 @@ footer{
     */
     .las{
         /* margin-top: 50vh; */
-        height: 179vh;
+        height: 185vh;
         position: relative;
         background: #111;
         color: white;
@@ -381,6 +381,8 @@ footer{
  
   footer{
     position: relative;
+    width: 414px;
+    left: 0;
   }
   .content .top .logo-details{
     font-size: 26px;
