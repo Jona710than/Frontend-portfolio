@@ -285,8 +285,9 @@ footer{
       }
     body{
         /* background-color:  rgb(10, 138, 138); */
-        background-color:rgb(10, 138, 138) ;
+        background-color:black;
         width: 414px;
+        height:2960px ;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -365,7 +366,7 @@ footer{
     */
     .las{
         /* margin-top: 50vh; */
-        height: 177vh;
+        height: 179vh;
         position: relative;
         background: #111;
         color: white;
