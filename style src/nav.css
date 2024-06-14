@@ -75,7 +75,11 @@ input.searc {
       width:95%;
 }
 .top_div{
+    background-image: url(../images/web.jpg);
     width: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* color:black; */
 }
 ::placeholder{
     font-size: 20px;
@@ -88,6 +92,8 @@ input.searc {
 }
 .marquee-container{
     display: flex;
+    /* border-bottom-right-radius: 100%; */
+    
 }
 .flag-toggle{
     display: flex;

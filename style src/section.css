@@ -1,3 +1,4 @@
+
 .intro{
     font-size: 3rem;
     padding-left: 5%;
@@ -292,6 +293,72 @@ footer{
     margin-right: 10px;
   }
 
+
+  .btn1{
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-left: 35% ;
+    margin-top: 10px;
+    font-family: Imprint MT Shadow;
+    border: 1px  solid white;
+    color: white;
+    display: flex;
+}
+.btn2{
+    font-size: 20px;
+    font-family: Imprint MT Shadow;
+    margin-top: 10px;
+    background-color: rgba(35, 63, 63, 0.151);
+    border: 1px  solid white;
+    color: white;
+    
+}
+.btn1,.btn2 a {
+    color: white;
+    text-decoration: none;
+}
+.btn1 a {
+    color: white;
+    text-decoration: none;
+}
+#btns{
+    position: absolute;
+    top: 55%;
+    left: 1%;
+    z-index: 5;
+    text-align: center;
+    gap: 2%; 
+    background-color: #fff;
+    padding-bottom: 13px;
+    padding-top: 3%;
+    padding-left: 3%;
+   width: 335px;
+    display: none;
+}
+#btns .btn3{
+    font-size: 20px;
+    font-family: Imprint MT Shadow;
+    /* margin-top: 100px; */
+    text-decoration: none;
+    padding: 1%;
+    padding-top: 3%;
+    background-color: rgba(35, 63, 63, 0.151);
+    border: 1px  solid white;
+    color: white;
+    
+}
+.btn3 a{
+    text-decoration: none;
+}
+/* #services{
+    margin-top: 5%;
+} 
+*/
+.btn0{
+  padding: 2% 100px 2% 5%;
+  width: 300px;
+ 
+}
 @media screen and (max-width:414px){
     
     #myVideo{
@@ -394,7 +461,7 @@ footer{
     }
     
     .las{
-        margin-top: 50vh;
+        /* margin-top: 30vh; */
         height: 185vh;
         position: relative;
         background: #111;

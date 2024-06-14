@@ -88,3 +88,6 @@ function cl(){
 //   } 
 //   }
 
+// function anime(){
+//   document.getElementById('body').style.opacity='0.2', document.getElementById('anime').style.opacity='none'
+// }
