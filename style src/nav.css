@@ -186,7 +186,7 @@ input.searc {
     .top_div{
         background-image: url(../images/web.jpg);
         width: 414px;
-        height: 800px;
+        /* height: 800px; */
          padding-bottom: 100px;
         padding-top:10px ;
         background-size: cover;
