@@ -91,6 +91,6 @@ function cl(){
 // function anime(){
 //   document.getElementById('body').style.opacity='0.2', document.getElementById('anime').style.opacity='none'
 // }
-function work(){
-  document.getElementById('body').innerHTML=" <div class='work'><div class='work-div'>! This page is unavailable at the moment, due to some minor adjustments from the source. Thank you.</div></div>";
-}
+// function work(){
+//   document.getElementById('body').innerHTML=" <div class='work'><div class='work-div'>! This page is unavailable at the moment, due to some minor adjustments from the source. Thank you.</div></div>";
+// }
