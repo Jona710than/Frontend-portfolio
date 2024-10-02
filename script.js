@@ -32,7 +32,7 @@ function re(){
   function off() {
    var body = document.getElementsByTagName('body')[0];
   //  var nav = document.getElementsByTagName('nav')[0];
-  body.style.backgroundColor = "black";
+  body.style.backgroundColor = " rgba(0, 0, 255, 0.199)";
   // nav.style.backgroundColor = "black";
 //   i.style.backgroundColor = "white";
   }
