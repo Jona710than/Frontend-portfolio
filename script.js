@@ -31,15 +31,18 @@ function re(){
   }
   function off() {
    var body = document.getElementsByTagName('body')[0];
-  //  var nav = document.getElementsByTagName('nav')[0];
-  body.style.backgroundColor = " rgba(0, 0, 255, 0.199)";
-  // nav.style.backgroundColor = "black";
-//   i.style.backgroundColor = "white";
+   var nav = document.getElementsByTagName('nav')[0];
+  //  var searching = document.getElementById('searching')[0];
+  body.style.backgroundColor = " rgb(6, 6, 46)";
+  body.style.color="white"
+  nav.style.backgroundColor = " rgb(6, 6, 46)";
+  // searching.style.backgroundColor = "white";
   }
   function on() {
    var body = document.getElementsByTagName('body')[0];
    var nav = document.getElementsByTagName('nav')[0];
   body.style.backgroundColor = "white";
+  body.style.color="black"
   nav.style.backgroundColor = "white";
   }
 function darkmode() {
