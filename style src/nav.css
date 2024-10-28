@@ -262,4 +262,8 @@ input.searc {
         background-color: rgba(210, 105, 30, 0.37);
       }  
 }
-
+.error-div{
+    background-color: white;
+    width:100%;
+    margin: 0;
+}

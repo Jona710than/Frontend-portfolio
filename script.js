@@ -75,7 +75,7 @@ function cl(){
 }
 function blockallcontent(){
   // document.getElementById('body').style.display='none';
-  document.getElementById('body').innerHTML='   <div><div class="text-center mt-12"> <img src="./images/loading-icon.svg" style="margin-left: 48%;" ><h1>Sorry this webpage is not available at the moment. <br>Please check again later thank you.</h1><img src="./images/man-tour.png" style="margin-left: 35%;">send an email to <a href="mailto:Jfnde710@gmail.com" class="text-blue-600">Jfnde710@gmail.com</a></div></div>';
+  document.getElementById('body').innerHTML='   <div class="error-div"><div class="text-center mt-12"> <img src="./images/loading-icon.svg" style="margin-left: 48%;" ><h1>Sorry this webpage is not available at the moment. <br>Please check again later thank you.</h1><img src="./images/man-tour.png" style="margin-left: 35%;">send an email to <a href="mailto:Jfnde710@gmail.com" class="text-blue-600">Jfnde710@gmail.com</a></div></div>';
 }
 // var nname=('jona', 'stan')
 // function logN() {
