@@ -32,11 +32,11 @@ function re(){
   function off() {
    var body = document.getElementsByTagName('body')[0];
    var nav = document.getElementsByTagName('nav')[0];
-  //  var searching = document.getElementById('searching')[0];
+   var searching = document.getElementById('searching')
   body.style.backgroundColor = " rgb(6, 6, 46)";
-  body.style.color="white"
+  body.style.color=" rgb(6, 6, 46)"
   nav.style.backgroundColor = " rgb(6, 6, 46)";
-  // searching.style.backgroundColor = "white";
+  searching.style.backgroundColor = "rgb(247, 247, 247);";
   }
   function on() {
    var body = document.getElementsByTagName('body')[0];
@@ -65,13 +65,17 @@ function btn(){
 document.getElementById('btns').style.display='flex';
 }
 function contact(){
-  document.getElementById('contact').style.display='block';
+  // document.getElementById('contact').style.display='block';
+  // let body= document.getElementsByTagName('body')[0];
+  // body.style='display:none;';
+  document.getElementById('contact').style="display:block;position:absolute;top:15%;";
   }
 function cl(){
   document.getElementById('contact').style.display='none';
 }
-// for my Login
-
+function blockallcontent(){
+  document.getElementById('body').style="display:none";
+}
 // var nname=('jona', 'stan')
 // function logN() {
 //   document.getElementById('fname').value=nname;

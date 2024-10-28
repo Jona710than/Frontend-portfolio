@@ -1,6 +1,8 @@
 body{
     width: 100%;
     margin: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
     /* background-color: rgb(10, 138, 138); */
 }
 nav{
@@ -67,7 +69,23 @@ input.searc {
   }
  
     /* display: block; */
-
+#contact{
+    display: none;
+    background-color:rgba(255, 255, 255, 0.336);
+    color:black;
+    /* rgba(6, 128, 128, 0.473) */
+    padding: 10%;
+    border-radius: 5rem;
+    border: 1px rgb(211, 207, 207) solid;
+    
+    
+}
+#contact span a{
+    color: blue;
+    text-decoration: underline;
+    font-weight: 900;
+    /* font-size: 2rem; */
+}
 .search{
     display: flex;
      background-color: white;
