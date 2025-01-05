@@ -1,104 +1,89 @@
-function re(){
-    document.getElementById('nnav').style='display:none;';
-    // document.getElementById('carouselExampleAutoplaying').style=';height: 100%; width: 100%;';
- };
- function ply(){
-    document.getElementById('myvideo').play()
- }
- function ree(){
-    document.getElementById('nnav').style='display:table;';
-    // document.getElementById('carouselExampleAutoplaying').style='margin-top: 10vh; ' };
- }
-  function rep(){
-    document.getElementById('dav').innerHTML='<div style="display: flex;"><div class="repair"> Search : <input type="text" name="clor" id="tr" list="clor" ></div>  <svg id="svg2" class="svg-icon search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7" onclick="search()"id="svg2"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"/><circle cx="8" cy="8" r="7"/></g></svg> <datalist id="color"><option value="red">red</option><option value="pink">pink</option><option value="olive">olive</option><option value="black">black</option><option value="aqua">aqua</option></datalist>  <button onclick="retr()" class="clear">Clear Search Bar</button>;</div>'    // document.getElementById('tr').value=''
-  
-  }
-  function retr(){
-    document.getElementById('dav').innerHTML='';
-    };
-    function search() {
-     var x=document.getElementById("tr").value;
-     const url= "C:/Users/Lenovo X270/Documents/Html and css codes/images/";
-     var ans= url + x ;
-     var ewin = window.open(ans,'_blank');
-     ewin.focus;
+// script.js
+const dropdownBtn = document.querySelectorAll(".dropdown-btn");
+const dropdown = document.querySelectorAll(".dropdown");
+const hamburgerBtn = document.getElementById("hamburger");
+const navMenu = document.querySelector(".menu");
+const links = document.querySelectorAll(".dropdown a");
 
-     function clear() {
-      if ( document.getElementById("tr").value="") {
-        remove(ans) 
-      } 
-     }
-  }
-  function off() {
-   var body = document.getElementsByTagName('body')[0];
-   var nav = document.getElementsByTagName('nav')[0];
-   var searching = document.getElementById('searching')
-  body.style.backgroundColor = " rgb(6, 6, 46)";
-  body.style.color=" rgb(6, 6, 46)"
-  nav.style.backgroundColor = " rgb(6, 6, 46)";
-  searching.style.backgroundColor = "rgb(247, 247, 247);";
-  }
-  function on() {
-   var body = document.getElementsByTagName('body')[0];
-   var nav = document.getElementsByTagName('nav')[0];
-  body.style.backgroundColor = "white";
-  body.style.color="black"
-  nav.style.backgroundColor = "white";
-  }
-function darkmode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+function setAriaExpandedFalse() {
+  dropdownBtn.forEach((btn) => btn.setAttribute("aria-expanded", "false"));
 }
 
-function menu(){
-  document.getElementById('links').style.display='block';
- 
+function closeDropdownMenu() {
+  dropdown.forEach((drop) => {
+    drop.classList.remove("active");
+    drop.addEventListener("click", (e) => e.stopPropagation());
+  });
 }
 
-function clse(){
-  document.getElementById('links').style.display='none';
- }
- function cls(){
-  document.getElementById('btns').style.display='none';
- }
-function btn(){
-document.getElementById('btns').style.display='flex';
+function toggleHamburger() {
+  navMenu.classList.toggle("show");
 }
-function contact(){
-  // document.getElementById('contact').style.display='block';
-  // let body= document.getElementsByTagName('body')[0];
-  // body.style='display:none;';
-  document.getElementById('contact').style="display:block;position:absolute;top:15%;";
+
+// const header = document.querySelector("header");
+// const menuToggler = document.querySelectorAll("#menu_toggle");
+
+// menuToggler.forEach(toggler => {
+//   toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+// });
+
+
+dropdownBtn.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    const dropdownIndex = e.currentTarget.dataset.dropdown;
+    const dropdownElement = document.getElementById(dropdownIndex);
+
+    dropdownElement.classList.toggle("active");
+    dropdown.forEach((drop) => {
+      if (drop.id !== btn.dataset["dropdown"]) {
+        drop.classList.remove("active");
+      }
+    });
+    e.stopPropagation();
+    btn.setAttribute(
+      "aria-expanded",
+      btn.getAttribute("aria-expanded") === "false" ? "true" : "false"
+    );
+  });
+});
+
+// close dropdown menu when the dropdown links are clicked
+links.forEach((link) =>
+  link.addEventListener("click", () => {
+    closeDropdownMenu();
+    setAriaExpandedFalse();
+    toggleHamburger();
+  })
+);
+
+// close dropdown menu when you click on the document body
+document.documentElement.addEventListener("click", () => {
+  closeDropdownMenu();
+  setAriaExpandedFalse();
+});
+
+// close dropdown when the escape key is pressed
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeDropdownMenu();
+    setAriaExpandedFalse();
   }
-function cl(){
-  document.getElementById('contact').style.display='none';
-}
-function blockallcontent(){
-  // document.getElementById('body').style.display='none';
-  document.getElementById('body').innerHTML='   <div class="error-div"><div class="text-center mt-12"> <img src="./images/loading-icon.svg" style="margin-left: 48%;" ><h1>Sorry this webpage is not available at the moment. <br>Please check again later thank you.</h1><img src="./images/man-tour.png" style="margin-left: 35%;">send an email to <a href="mailto:Jfnde710@gmail.com" class="text-blue-600">Jfnde710@gmail.com</a></div></div>';
-}
-// var nname=('jona', 'stan')
-// function logN() {
-//   document.getElementById('fname').value=nname;
-// }
-// ////////////////////////////////////
-// var bname=('fest', 'elock')
-// function logNn() {
-//   document.getElementById('lname').value=bname;
-// }
-// ////////////////////////////////////////
-// function submit(){
-//   document.getElementById('fname').value=nname;
-//   if(value=nname){
-//     document.write('it worked well');
-//   }else{
-//     alert('wrong');
-//   } 
-//   }
+});
 
-// function anime(){
-//   document.getElementById('body').style.opacity='0.2', document.getElementById('anime').style.opacity='none'
-// }
-// function work(){
-//   document.getElementById('body').innerHTML=" <div class='work'><div class='work-div'>! This page is unavailable at the moment, due to some minor adjustments from the source. Thank you.</div></div>";
-// }
+hamburgerBtn.addEventListener("click", toggleHamburger);
+
+
+
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 4000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("load").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+document.getElementById("loader").onclick

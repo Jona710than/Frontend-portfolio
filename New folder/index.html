@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="0OhWUgcA2_sOm5y1rLSxUpkVRWHcsLtp2IrRPVGacbY" 
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
+            <link rel="stylesheet" href="./style src/style.css">
+            <link rel="stylesheet" href="./style src/nav.css">
+            <link rel="stylesheet" href="./style src/section.css">
+            <link rel="stylesheet" href="./style src/footer.css">
+            <link rel="stylesheet" href="build/tailwind.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+            <link rel="icon" href="./images/jone.png" type="image/x-icon"/>
+      <script src="script.js"></script>
+    <title>Jonathan Frontend portfolio</title>
+    
+    
+      <!-- import tailwindcss from 'https://cdn.skypack.dev/pin/tailwindcss@v3.1.8-diwqGRTxzuOsx0Oh1GvI/mode=imports/optimized/tailwindcss.js'; -->
+
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+      
+</head>
+<style>
+  .work{
+    background-image: url(./images/portfolio\ \(4\).jpg);
+    background-size: cover;
+    text-align: center;
+    background-color: rgba(0, 0, 255, 0.199);
+    padding: 20%;
+    font-size: 2rem;
+    font-weight: 900;
+    /* flex-shrink: inherit; */
+  }
+  .work-div{
+    background-color: rgba(0, 255, 255, 0.233);
+    border-radius: 10rem;
+    padding: 2%;
+    flex-shrink: inherit;
+  }
+</style>
+<body id="body" onload="Bblockallcontent()" >
+  
+    <nav>
+     <div class="logo">
+      <img src="./images/j4.png" alt="icon" class="nav-img1">
+      <span>ona-portfolio</span>
+      <div class="fa-bar" id='fa-bar' onclick="menu()"><i onclick="menu()" class="fa fa-bars fa-2x"></i></div>
+     
+     </div>
+     
+      <div class="links" id="links">
+      
+        <li class="close" onclick="clse()" id="ear"><i onclick="clse()" class="fa fa-close " ></i></li>
+        <li ><a href="#" class="a"><i class="fa fa-home"></i> Home</a></li>
+        <li ><a href="#" class="b"><i class="fa fa-folder"></i> Projects</a></li>
+        <li onclick="contact()" ><a href="#" class="c"><i class=" fa fa-address-book"></i> Contacts</a></li>
+        <div id="contact" >
+          <i class="fa fa-close "onclick="cl()"  style=" padding: 0;margin-top: -10px; height: 15px; border-radius:100% ;color: white;"></i><br>
+
+          <span ><a style="display: flex;" href="tel: +2348130780366"  class="btn0" ><i class="fa fa-phone"></i>+2348130780366</a> </span>
+  
+          <span ><a style="display: flex;" href="#"  class="btn0"><i class="fa fa-envelope"></i>Jfnde710@gmail.com</a> </span>
+          </div>
+        <li ><a href="#" class="d"><i class="fa fa-cloud"></i> Social Media</a></li>
+      </div>
+       <div  class="flag-toggle">
+        <div style="margin-top: 10%;">
+          <i class="fa fa-sun o fa-2x" onclick="on()" style="margin-top: 10%; font-size: 1.5rem; color: rgb(47, 47, 90); "></i>
+          <i onclick="off()" id="off" class="fa fa-moon o"  style="margin-top: 10%; font-size: 1.5rem; color: rgb(47, 47, 90);" ></i>
+       </div>
+        <a href="https://www.google.com/search?q=nigeria"><img src="./images/nigeria.png" alt="icon" class="nav-img2"></a>
+      </div>
+      
+    </nav>
+    <section>
+      <!-- <video autoplay muted loop id="myVideo">
+        <source src="./style src/web.mp4" type="video/mp4">
+      </video> -->
+    <div class="mark" >
+      
+    
+      <div class="top_div">
+         <div class="search" id="searching">
+           <i class="fa fa-search fa-2x" id="fa-search"></i><input class="searc" type="search" spellcheck="true"  placeholder="Search..."  ><i class="fa fa-search fa-2x" id="fa-search"></i><i class="fab fa-github fa-2x" id="fa-search"></i><i class="fa fa-bell fa-2x" id="fa-search"></i>
+        </div>
+         <div style="margin-top: 15% ;color: white;">  
+           <div class="intro" >
+             <div  style="display: flex; gap: 10px;" >
+               Frontend_Developer<i class="fa fa-computer"></i>
+             </div>
+              <div> & <i class="fa fa-mobile"></i> UIUX Designer</div></div>
+              <p  style="padding-left: 8%;"> I am a Freelancer and open to Full-time <br>
+                  Part-time , Internship Jobs around the world.
+              </p>
+           </div>
+           <!-- <div style="display: flex; gap: 30%;">
+             <div class="btn1"><a href="https://github.com/Jona710than/Frontend-portfolio" style="display: flex; "><i class="fa fa-user"></i>Profile</a></div>
+             <button class="btn2"><a style="display: flex;" href="./style src/Jonathan Portfolio 1.pdf" download ><i class="fa fa-download"></i>Download</a> </button>
+           </div> -->
+      </div>
+       <!-- <div class="marquee-container">
+         <div class="scroll">
+           <marquee behavior="scroll" direction="down" scrollamount="50">
+             <img src="../images/portfolio (1).jpg" style="width: 100%;height: 70%;border-radius: 2%;"> <br>
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non impedit quam ab maiores dolorem praesentium dicta architecto neque velit quia, distinctio repudiandae reiciendis est vel iusto recusandae? Assumenda, quis perferendis.
+             Odit ipsa ipsam libero voluptate praesentium ex nulla dolore veritatis, minus explicabo id est, autem placeat consectetur, reiciendis eum esse ab natus excepturi facere. Quibusdam possimus similique libero beatae culpa!
+             Etur excepturi quos, omnis dolorem voluptatibus ad vero repellat atque, non similique fuga? Similique corrupti libero nihil, error fugiat illo totam natus nesciunt quidem, iure nostrum.
+              Mollitia, modi expedita. Commodi sint beatae eos. Maiores ea eos exercitationem porro corrupti quos, deserunt id omnis corporis laboriosam, nisi natus assumenda modi molestiae iusto sint ullam laudantium labore molestias.
+            <video muted autoplay src="./images/istockphoto-1675788340-640_adpp_is.mp4" ></video>
+           </marquee> 
+           </div>
+       </li>
+       <div class="scroll">
+         <marquee behavior="scroll" direction="up" scrollamount="50">
+           <img src="../images/portfolio (1).jpg" style="width: 100%;height: 70%;border-radius: 2%;"> <br>
+           
+         m, beatae minima consequuntur sit magnam cum sapiente voluptatum voluptatem inventore quae? At, explicabo eligendi.
+           Porro quidem rem earum laborum assumenda dolore at tempore, nihil, totam, quisquam accusantium tenetur ex atque temporibus possimus sit fugiat culpa nostrum. Exercitationem modi commodi ipsa possimus reprehenderit eaque magnam.
+          Fugiat, architecto ut dolore dignissimos quas id in fugit vitae veritatis pariatur eum illum commodi officia nihil quia dolores quo unde ex cumque nobis molestias? Molestiae maxime consectetur minima quo?
+       
+         </marquee> 
+         </div>
+       </div> -->
+       <!-- <i class='fas fa-toggle-on' id="on" onclick="on()"></i> -->
+ 
+  </div>
+       
+   <!-- <div id="blind"></div>
+   <section class="las">
+    <div class="container">
+        <h2 id="services">My Services</h2>
+        <section class="services">
+            <div class="card">
+                <div class="content">
+                    <div class="icon"><i class="fa fa-code"></i></div>
+                    <div class="title">Web Development</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="icon"><i class="fa fa-mobile"></i></div>
+                    <div class="title">App Development</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="icon"><i class="fa fa-paint-brush"></i></div>
+                    <div class="title">Web Design </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="icon"><i class="fa fa-laptop"></i></div>
+                    <div class="title">Responsive Design </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="icon"><i class="fa fa-line-chart"></i></div>
+                    <div class="title">Advertising </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <div class="icon"><i class="fab fa-react"></i></div>
+                    <div class="title">React</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, reprehenderit.</p>
+                </div>
+            </div>
+             -->
+        <!-- </section>
+        <div style="text-align: center;">
+            You can view my Frontend portfolio website  through my profile button and also download my cv 
+              <div style="display: flex; gap: 10%;margin-bottom: 5%; text-align: center;">
+                <div class="btn1"><a href="https://github.com/Jona710than/Frontend-portfolio" style="display: flex; "><i class="fa fa-user"></i>Profile</a></div>
+                <button class="btn2"onclick="btn()" ><i class="fa fa-download"></i>Download</a> </button>
+              </div>
+        </div>
+        <footer>
+          <div class="content">
+            <div class="top">
+              <div class="logo-details">
+                <i class="fab fa-slack"></i>
+                <span class="logo_name">Jona-Portfolio</span>
+              </div>
+              <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a hrefi class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/festus-jonathan-elochukwu-960873257/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Jona710than/Frontend-portfolio"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <div class="link-boxes">
+              <ul class="box">
+                <li class="link_name">Company</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Get started</a></li>
+              </ul>
+              <ul class="box">
+                <li class="link_name">Services</li>
+                <li><a href="#">Web Development</a></li>
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Frontend</a></li>
+                <li><a href="#">React</a></li>
+              </ul>
+              <ul class="box">
+                <li class="link_name">Account</li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">My account</a></li>
+                <li><a href="#">Vitae</a></li>
+                <li><a href="#">Github</a></li>
+              </ul>
+              <ul class="box">
+                <li class="link_name">Courses</li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">React</a></li>
+              </ul>
+              <ul class="box input-box">
+                <!-- <li class="link_name">Subscribe</li> -->
+                <!-- <li><input type="text" placeholder="Enter your email"></li> -->
+                <!-- <li><input type="button" value="Subscribe"></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="bottom-details">
+            <div class="bottom_text">
+              <span class="copyright_text">Copyright © 2024 <a href="#">Jonaland.</a>All rights reserved</span>
+              <span class="policy_terms">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & condition</a>
+              </span>
+            </div>
+          </div>
+          <!-- <div><a class="TOPP" href="#home">BACK TO TOP</a></div> -->
+        </footer>
+        <div id="btns">
+          <button class="btn3"><a style="display: flex;" href="./style src/Jona work cv.docx" download ><i class="fa fa-file"></i>Download Docx</a> </button>
+  
+          <button class="btn3"><a style="display: flex;" href="./style src/Jona work cv.pdf" download ><i class="fa fa-briefcase"></i>Download Pdf</a> </button>
+          <i class="fa fa-close "onclick="cls()"  style=" padding: 2%;margin-top: -15px;background-color: black; height: 15px; border-radius:100% ; width: 15px;"></i>
+        </div> 
+         <!-- <div class="login">
+          <h1>LOG-IN</h1>
+          <br><br>
+          First Name : <input type="text" name="fname" id="fname" value="" onload="logN()"><br>
+          Last Name : <input type="text" name="lname" id="lname" value="" onload="logNn()"><br>
+          Password : <input type="password" name="password" id="password" value="">
+          <br>
+          <button onclick="submit()">Login</button>
+          <br><br>
+        </div> -->
+        <!-- <button onclick="anime()" style="padding: 2% ;" class=" bg-red-500 text-white rounded-2xl">click me!</button> -->
+        <!-- // "dependencies": {
+          //   "autoprefixer": "^10.4.20",
+          //   "postcss-cli": "^11.0.0",
+          //   "tailwindcss": "^3.4.13"
+          // } -->
+         
+          <div>
+           
+                        
+            
+            <img src="./images/man-tour.png" style="margin-left: 0;">
+           
+            </div>
+        </div>
+   </body>   
+    
+</html>
+ 
