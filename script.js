@@ -77,7 +77,7 @@ hamburgerBtn.addEventListener("click", toggleHamburger);
 var myVar;
 
 function myFunction() {
-  myVar = setTimeout(showPage, 4000);
+  myVar = setTimeout(showPage, 2000, );
 }
 
 function showPage() {
@@ -85,5 +85,10 @@ function showPage() {
   document.getElementById("load").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+// function Page() {
+//   document.getElementById("loader").style.blur= "";
+//   document.getElementById("load").style.display = "none";
+//   document.getElementById("myDiv").style.display = "block";
+// }
 
-document.getElementById("loader").onclick
+// document.getElementById("loader").onclick
