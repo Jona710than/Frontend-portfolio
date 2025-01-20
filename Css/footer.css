@@ -106,3 +106,22 @@
       margin: 10px 0 0 0;
     }
   }
+
+  .but{
+    background: linear-gradient(grey,transparent);
+    /* color: white; */
+    padding: 1%;
+    z-index: 5;
+    position: fixed;
+    top: 90%;
+    /* left: 35%; */
+  }
+  .but:hover{
+    background: linear-gradient(transparent,grey);
+  }
+  .but:hover a{
+    color: black;
+  }
+  .but a{
+    color: white;
+  }

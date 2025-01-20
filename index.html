@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="./Css/nav.css" />
     <link rel="stylesheet" href="./Css/style.css" />
     <link rel="stylesheet" href="./Css/service.css">
-    <link rel="stylesheet" href="./Css/about.css">
-    <link rel="stylesheet" href="./Css/contact.css"/>
-    <link rel="stylesheet" href="./Css/footer.css"/>
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/contact.css"/>
+    <link rel="stylesheet" href="./css/footer.css"/>
     <!-- <script src="../custom-scripts.js" defer></script> -->
     <!-- <script src="script.js"></script> -->
   </head>
+
+  <!-- function on the body tag for the loading before page appear -->
 
   <body onload="myFunction()" >
     <div class="introduc">
@@ -26,7 +28,9 @@
     <div class="intro" id="load">welcome to my page.</div>
     </div>
     <div style="display:none;" id="myDiv">
-    <main>
+
+      <!-- Main section begining -->
+    <main id="home">
       <header id="nav-menu" aria-label="navigation bar">
         <div class="container">
           <div class="nav-start">
@@ -167,9 +171,9 @@
                     </ul>
                   </div>
                 </li>
-                <li class="li"><a class="nav-link" href="">Jobs</a></li>
-                <li><a class="nav-link" href="">Livestream</a></li>
-                <li><a class="nav-link" href="">About</a></li>
+                <li class="li"><a class="nav-link" href="#sec">Services</a></li>
+                <li><a class="nav-link" href="#conn">Contact </a></li>
+                <li><a class="nav-link" href="#abt">About </a></li>
               </ul>
             </nav>
           </div>
@@ -207,7 +211,7 @@
       <section class="hero">
         <div class="row container">
           <div class="column">
-            <h2>Hello it's me JonaLL, <br />Welcome to my portfolio Web.</h2>
+            <h2>Hello it's me Jonathan, <br />Welcome to my portfolio Web.</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, architecto? Consectetur enim obcaecati velit quibusdam iure, perspiciatis accusantium, voluptatibus possimus cum voluptates dolorum optio ab vitae. Praesentium voluptas quia voluptates at aperiam aliquid vitae autem!</p>
             <div class="buttons">
               <button class="btnn">Read More</button>
@@ -224,8 +228,11 @@
       <section>
         
     </main>
-    
-    <section class="sec">
+    <!-- Main section ending -->
+
+    <!-- section for services begining -->
+
+    <section class="sec" id="sec">
       <div class="ro">
         <h2 class="section-heading">Our Services</h2>
       </div>
@@ -235,7 +242,7 @@
             <div class="icon-wrapper">
               <i class="fas fa-hammer"></i>
             </div>
-            <h3 class="h">Service Heading</h3>
+            <h3 class="h">Web Design</h3>
             <p class="p">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
@@ -247,7 +254,7 @@
             <div class="icon-wrapper">
               <i class="fas fa-brush"></i>
             </div>
-            <h3 class="h">Service Heading</h3>
+            <h3 class="h">Web Development</h3>
             <p class="p">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
@@ -259,7 +266,7 @@
             <div class="icon-wrapper">
               <i class="fas fa-wrench"></i>
             </div>
-            <h3 class="h">Service Heading</h3>
+            <h3 class="h">Frontend Development</h3>
             <p class="p">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
@@ -271,7 +278,7 @@
             <div class="icon-wrapper">
               <i class="fas fa-truck-pickup"></i>
             </div>
-            <h3 class="h">Service Heading</h3>
+            <h3 class="h">React Design</h3>
             <p class="p">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
@@ -283,7 +290,7 @@
             <div class="icon-wrapper">
               <i class="fas fa-broom"></i>
             </div>
-            <h3 class="h">Service Heading</h3>
+            <h3 class="h">UIUX Design</h3>
             <p class="p">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
@@ -295,7 +302,7 @@
             <div class="icon-wrapper">
               <i class="fas fa-plug"></i>
             </div>
-            <h3 class="h">Service Heading</h3>
+            <h3 class="h">Backend Development</h3>
             <p class="p">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
               consequatur necessitatibus eaque.
@@ -304,6 +311,7 @@
         </div>
       </div>
     </section>
+    <!-- section for services ending -->
 
     <!-- <section>
       <div class="marquee-con">
@@ -317,7 +325,10 @@
          </div>;
      </div>
     </section> -->
-    <section class="sec-three">
+
+    <!-- section for about begining -->
+
+    <section class="sec-three" id="abt">
       <div class="responsive-container-block bigContainer">
         <div class="responsive-container-block Container bottomContainer">
           <div class="ultimateImg">
@@ -346,7 +357,10 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <!-- section for about ending -->
+
+<!-- section for contact begining -->
+    <section class="contact" id="conn">
       
   <div class="contain">
     <div class="conten">
@@ -391,7 +405,10 @@
     </div>
   </div>
   </section>
-    
+  <!-- section for contact ending -->
+
+
+     <!--footer section begining -->
     <section class="footer" >
       <div class="footer-row">
         <div class="footer-col">
@@ -447,8 +464,11 @@
       </div>
     </section>
 
+    <!-- footer section ending -->
+    
+    <!-- Creating a back to top button -->
 
-
+    <button class="but" ><a href="#home">Back to top</a></button>
 
     </div>
     <script src="script.js"></script>

@@ -1,4 +1,4 @@
-<html lang="en">
+<!-- <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,30 +6,115 @@
     <style>
         .loader {
   /* position: fixed;
-  left: 45%;
-  top: 40%; */
-  border: 5px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 5px solid #3498db;
-  width: 120px;
-  height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
-  animation: spin 2s linear infinite;
-}
+    left: 45%;
+    top: 40%; */
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+  }
 
-/* Safari */
-@-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
-}
+  /* Safari */
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+      </style>
+  </head>
+  <body>
+      <div  class="loader" id="loader"></div>
+      <p>An example of this technique appears in the movie "12&nbsp;Angry&nbsp;Men."</p>
+  </body>
+  </html> -->
+
+
+
+  
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+  .menu {
+    float:left;
+    width:20%;
+    text-align:center;
+  }
+  .menu a {
+    background-color:#e5e5e5;
+    padding:8px;
+    margin-top:7px;
+    display:block;
+    width:100%;
+    color:black;
+  }
+  .main {
+    float:left;
+    width:60%;
+    padding:0 20px;
+  }
+  .right {
+    background-color:#e5e5e5;
+    float:left;
+    width:20%;
+    padding:15px;
+    margin-top:7px;
+    text-align:center;
+  }
+
+  @media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width:100%;
+    }
+  }
+  </style>
+  </head>
+  <script>
+    function myFunction() {
+    x=document.getElementById("hi").style.backgroundColor="red";
 }
-    </style>
-</head>
-<body>
-    <div  class="loader" id="loader"></div>
-</body>
-</html>
+  </script>
+  <body style="font-family:Verdana;color:#aaaaaa;">
+
+  <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+    <h1 id="hi" >Hello World</h1>
+  </div>
+
+  <div style="overflow:auto">
+    <div class="menu">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+      <a href="#">Link 4</a>
+    </div>
+
+    <div class="main">
+      <h2>Lorum Ipsum</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+    <div class="right">
+      <h2>About</h2>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </div>
+  </div>
+
+  <div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;">© copyright w3schools.com</div>
+  <button onclick="myFunction(x)">click me</button>
+
+  </body>
+
+  <!-- Mirrored from www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query3 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Dec 2020 04:06:31 GMT -->
+  </html>
