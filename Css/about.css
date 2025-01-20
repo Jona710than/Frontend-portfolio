@@ -638,7 +638,7 @@ a {
 }
 @media (max-width:514px){
   .responsive-container-block.bigContainer {
-    margin-top: 220%;
+    margin-top: 210%;
     /* padding-top: 10px;
     padding-right: 20px;
     padding-bottom: 10px;
@@ -647,7 +647,7 @@ a {
 }
 @media (max-width:470px){
   .responsive-container-block.bigContainer {
-    margin-top: 240%;
+    margin-top: 230%;
     /* padding-top: 10px;
     padding-right: 20px;
     padding-bottom: 10px;
@@ -655,19 +655,19 @@ a {
   }
   @media (max-width:443px){
     .responsive-container-block.bigContainer {
-      margin-top: 270%;
+      margin-top: 260%;
       
     }
   }
   @media (max-width:425px){
     .responsive-container-block.bigContainer {
-      margin-top: 290%;
+      margin-top: 270%;
       
     }
   }
   @media (max-width:359px){
     .responsive-container-block.bigContainer {
-      margin-top: 300%;
+      margin-top: 290%;
       
     }
   }
