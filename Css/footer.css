@@ -114,6 +114,7 @@
     z-index: 5;
     position: fixed;
     top: 90%;
+    float: right;
     /* left: 35%; */
   }
   .but:hover{
