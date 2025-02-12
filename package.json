@@ -1,6 +1,0 @@
-{
-
-  "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
-  }
-}

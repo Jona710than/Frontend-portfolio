@@ -1,476 +1,957 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- Page links and source codes -->
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>JonaLL Portfolio Web.</title> 
-    <link rel="shortcut icon" href="./images/j_logo.png" type="image/x-icon">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/> 
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"/>
-    <link rel="stylesheet" href="./Css/loader.css" />
-    <link rel="stylesheet" href="./Css/nav.css" />
-    <link rel="stylesheet" href="./Css/style.css" />
-    <link rel="stylesheet" href="./Css/service.css">
-    <link rel="stylesheet" href="./Css/about.css">
-    <link rel="stylesheet" href="./Css/contact.css"/>
-    <link rel="stylesheet" href="./Css/footer.css"/>
-    <!-- <script src="../custom-scripts.js" defer></script> -->
-    <!-- <script src="script.js"></script> -->
-  </head>
 
-  <!-- function on the body tag for the loading before page appear -->
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>JonaLL Portfolio Web.</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-  <body onload="myFunction()" >
-    <div class="introduc">
-      <div  class="loader" id="loader"></div>
-    <div class="intro" id="load">welcome to my page.</div>
+  <!-- Favicons -->
+  <link href="assets/img/j_logo.png" rel="icon">
+
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Jona</h1>
+        <span>LL</span>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+         <li><a href="index.html" class="active">Home<br></a></li>
+         <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+         
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+
+      <a class="btn-getstarted" href="index.html">Home</a>
+
     </div>
-    <div style="display:none;" id="myDiv">
+  </header>
 
-      <!-- Main section begining -->
-    <main id="home">
-      <header id="nav-menu" aria-label="navigation bar">
-        <div class="container">
-          <div class="nav-start">
-            <a class="logo" href="">
-              <img src="images/j_logo.png"width="45"height="45" alt="Inc Logo"/>
-            </a>
-            <nav class="menu">
-              <ul class="menu-bar">
-                <li>
-                  <button
-                    class="nav-link dropdown-btn"
-                    data-dropdown="dropdown1"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    aria-label="browse"
-                  >
-                    Browse
-                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                  </button>
-                  <div id="dropdown1" class="dropdown">
-                    <ul role="menu">
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#best-of-the-day">
-                          <img src="images/botd.svg" class="icon" />
-                          <div>
-                            <span class="dropdown-link-title"
-                              >Best of the day</span
-                            >
-                            <p>Shorts featured today by curators</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#featured-streams">
-                          <img src="images/fs.svg" class="icon" />
-                          <div>
-                            <span class="dropdown-link-title"
-                              >Featured Streams</span
-                            >
-                            <p>Leading creatives livestreams</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#subscriptions">
-                          <img src="images/sp.svg" class="icon" />
-                          <div>
-                            <span class="dropdown-link-title">Subscriptions</span>
-                            <p>Gain exclusive access</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#creative-feed">
-                          <img src="images/cf.svg" class="icon" />
-                          <div>
-                            <span class="dropdown-link-title">Creative Feed</span>
-                            <p>See trending creations</p>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-  
-                    <ul role="menu">
-                      <li class="dropdown-title">
-                        <span class="dropdown-link-title">Browse by apps</span>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#adobe-xd">
-                          <img src="images/xd.svg" />
-                          Adobe XD
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#after-effect">
-                          <img src="images/ae.svg" />
-                          After Effect
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#sketch">
-                          <img src="images/sketch.svg" />
-                          Sketch
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#indesign">
-                          <img src="images/indesign.svg" />
-                          Indesign
-                        </a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#figma">
-                          <img src="images/figma.svg" />
-                          Figma
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li>
-                  <button
-                    class="nav-link dropdown-btn"
-                    data-dropdown="dropdown2"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                    aria-label="discover"
-                  >
-                    Discover
-                    <i class="bx bx-chevron-down" aria-hidden="true"></i>
-                  </button>
-                  <div id="dropdown2" class="dropdown">
-                    <ul role="menu">
-                      <li>
-                        <span class="dropdown-link-title">Browse Categories</span>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#branding">Branding</a>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#illustrations"
-                          >Illustration</a
-                        >
-                      </li>
-                    </ul>
-                    <ul role="menu">
-                      <li>
-                        <span class="dropdown-link-title">Download App</span>
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#mac-windows"
-                          >MacOS & Windows</a
-                        >
-                      </li>
-                      <li role="menuitem">
-                        <a class="dropdown-link" href="#linux">Linux</a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="li"><a class="nav-link" href="#sec">Services</a></li>
-                <li><a class="nav-link" href="#conn">Contact </a></li>
-                <li><a class="nav-link" href="#abt">About </a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="nav-end">
-            <div class="right-container">
-              <form class="search" role="search">
-                <input type="search" name="search" placeholder="Search" />
-                <i class="bx bx-search" aria-hidden="true"></i>
-              </form>
-  
-              <a href="#profile">
-                <img
-                  src="images/man-fold.png"
-                  width="30"
-                  height="30"
-                  alt="user image"
-                />
-              </a>
-              <button class="bt-p"
-              >Create  <i class="bx bx-chevron-down" aria-hidden="true"></i></button>
-            </div>
-  
-            <button
-              id="hamburger"
-              aria-label="hamburger"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              <i class="bx bx-menu" aria-hidden="true"></i>
-            </button>
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/High_resolution_wallpaper_background_ID_77702134671.jpg" alt="" data-aos="fade-in">
+
+      <div class="container">
+
+        <div class="row justify-content-center text-center"  data-aos-delay="100">
+          <div class="col-xl-6 col-lg-8">
+            <h2>welcome to my page<span>.</span></h2>
+            <p>Hello my name is Jonathan Festus, I am a programmer in different Programming Languages.</p>
           </div>
         </div>
-      </header>
-      
-      <section class="hero">
-        <div class="row container">
-          <div class="column">
-            <h2>Hello it's me Jonathan, <br />Welcome to my portfolio Web.</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, architecto? Consectetur enim obcaecati velit quibusdam iure, perspiciatis accusantium, voluptatibus possimus cum voluptates dolorum optio ab vitae. Praesentium voluptas quia voluptates at aperiam aliquid vitae autem!</p>
-            <div class="buttons">
-              <button class="btnn">Read More</button>
-              <button class="btn">Contact Me</button>
+
+        <div class="row gy-4 mt-5 justify-content-center"  data-aos-delay="200">
+          <div class="col-xl-2 col-md-4"  data-aos-delay="300">
+            <div class="icon-box">
+              <i class="fa fa-code"></i>
+              <h3><a href="">Frontend</a></h3>
             </div>
           </div>
-          <div class="column">
-            <img src="images/quiz.png" alt="heroImg" class="hero_img" />
+          <div class="col-xl-2 col-md-4"  data-aos-delay="400">
+            <div class="icon-box">
+              <i class="fa-brands fa-react"></i>
+              <h3><a href="">React</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4"  data-aos-delay="500">
+            <div class="icon-box">
+              <i class="fa fa-wordpress" aria-hidden="true"></i>
+              <h3><a href="">Word-press</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4"  data-aos-delay="600">
+            <div class="icon-box">
+              <i class="fa-solid fa-database"></i>
+              <h3><a href="">Backend</a></h3>
+            </div>
+          </div>
+          <div class="col-xl-2 col-md-4"  data-aos-delay="700">
+            <div class="icon-box">
+              <i class="fa fa-brush"></i>
+              <h3><a href="">Designs</a></h3>
+            </div>
           </div>
         </div>
-        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
-      </section>
 
-      <section>
-        
-    </main>
-    <!-- Main section ending -->
-
-    <!-- section for services begining -->
-
-    <section class="sec" id="sec">
-      <div class="ro">
-        <h2 class="section-heading">Our Services</h2>
       </div>
-      <div class="ro">
-        <div class="colum">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-hammer"></i>
-            </div>
-            <h3 class="h">Web Design</h3>
-            <p class="p">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        <div class="colum">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-brush"></i>
-            </div>
-            <h3 class="h">Web Development</h3>
-            <p class="p">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        <div class="colum">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-wrench"></i>
-            </div>
-            <h3 class="h">Frontend Development</h3>
-            <p class="p">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        <div class="colum">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-truck-pickup"></i>
-            </div>
-            <h3 class="h">React Design</h3>
-            <p class="p">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        <div class="colum">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-broom"></i>
-            </div>
-            <h3 class="h">UIUX Design</h3>
-            <p class="p">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-        <div class="colum">
-          <div class="card">
-            <div class="icon-wrapper">
-              <i class="fas fa-plug"></i>
-            </div>
-            <h3 class="h">Backend Development</h3>
-            <p class="p">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
-              consequatur necessitatibus eaque.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- section for services ending -->
 
-    <!-- <section>
-      <div class="marquee-con">
-      
-        <div class="men"> 
-           <marquee behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
-            <img src="./images/man-fold.png" alt="">
-            <img src="./images/man-laptop.png" alt="">
-            <img src="./images/man-point.png" alt="">
-           </marquee>
-         </div>;
-     </div>
-    </section> -->
+    </section><!-- /Hero Section -->
 
-    <!-- section for about begining -->
+    <!-- About Section -->
+    <section id="about" class="about section">
 
-    <section class="sec-three" id="abt">
-      <div class="responsive-container-block bigContainer">
-        <div class="responsive-container-block Container bottomContainer">
-          <div class="ultimateImg">
-            <img class="mainImg" src="./images/man-laptop.png">
-            <div class="purpleBox">
-              <p class="purpleText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget purus lectus viverra in semper nec pretium mus.
-              </p>
-              <img class="stars" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/mp5.svg">
-            </div>
+      <div class="container"  data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="assets/img/busy.png" class="img-fluid" alt="">
           </div>
-          <div class="allText bottomText">
-            <p class="text-blk headingText">
-              About Me
+          <div class="col-lg-6 order-2 order-lg-1 content">
+            <h3>Front-end Designer/Developer.</h3>
+            <p class="fst-italic">
+              Hi, I'm Jonathan, I am dedicated to creating new designs and modern development e.g., innovative designs, engaging digital experiences, Problem solving. With a background in Aptech, I strive to bring unique 
+              perspectives and creativity to every project I take on.
             </p>
-            <p class="text-blk subHeadingText">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>See how I turn concepts into impactful results.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Connect with me let's make something amazing together!.</span></li>
+              <li><i class="bi bi-check2-all"></i> <span> I specialize in specific services or skills you offer—e.g., web design, branding, digital marketing, UI/UX design and strive to bring fresh, innovative ideas to every project I tackle.</span></li>
+            </ul>
+            <p>
+              Browse through my work to see how I combine critical thinking to deliver high-quality results. Whether you're looking for impressive projects, I'm always excited to collaborate and bring ideas to life.
             </p>
-            <p class="text-blk description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum pulvinar ullamcorper suspendisse ac eget. Pellentesque tempus leo in ullamcorper quis vestibulum ligula elementum ut.
-            </p>
-            <a class="explore">
-              View Services
-            </a>
           </div>
-        </div>
-      </div>
-    </section>
-    <!-- section for about ending -->
-
-<!-- section for contact begining -->
-    <section class="contact" id="conn">
-      
-  <div class="contain">
-    <div class="conten">
-      <div class="left-side">
-        <div class="address details">
-          <i class="fas fa-map-marker-alt"></i>
-          <div class="topic">Address</div>
-          <div class="text-one">Kano,Nigeria</div>
-          <div class="text-two">Kano,Nigeria,Africa</div>
-        </div>
-        <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
-          <div class="topic">Phone</div>
-          <div class="text-one">+234 81307 80366</div>
-          <div class="text-two">+234 81307 80366</div>
-        </div>
-        <div class="email details">
-          <i class="fas fa-envelope"></i>
-          <div class="topic">Email</div>
-          <div class="text-one">Jfnde710@gmail.com</div>
-          <div class="text-two">jfnde710@gmail.com</div>
-        </div>
-      </div>
-      <div class="right-side">
-        <div class="topic-text">Send me a message</div>
-        <p>If you have any work from me or any types of quries related to my field, you can send me message from here. It's my pleasure to help you.</p>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Enter your name">
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Enter your email">
-        </div>
-        <div class="input-box message-box">
           
         </div>
-        <div class="button">
-          <input type="button" value="Send Now" >
-        </div>
-      </form>
-    </div>
-    </div>
-  </div>
-  </section>
-  <!-- section for contact ending -->
 
+      </div>
 
-     <!--footer section begining -->
-    <section class="footer" >
-      <div class="footer-row">
-        <div class="footer-col">
-          <h4>Info</h4>
-          <ul class="links">
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact Me</a></li>
-            <li><a href="#">Customers</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Collection</a></li>
-          </ul>
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section">
+
+      <div class="container"  data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 40
+                },
+                "480": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 60
+                },
+                "640": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 80
+                },
+                "992": {
+                  "slidesPerView": 6,
+                  "spaceBetween": 120
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><img src="assets/img/clients/pngwing.com (6).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/pngwing.com (7).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/pngwing.com (8).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/pngwing.com (9).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/pngwing.com (10).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/pngwing.com (3).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/pngwing.com (4).png" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="assets/img/clients/pngwing.com (5).png" class="img-fluid" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-        <div class="footer-col">
-          <h4>Explore</h4>
-          <ul class="links">
-            <li><a href="#">Free Designs</a></li>
-            <li><a href="#">Latest Designs</a></li>
-            <li><a href="#">Themes</a></li>
-            <li><a href="#">Popular Designs</a></li>
-            <li><a href="#">Art Skills</a></li>
-            <li><a href="#">New Uploads</a></li>
-          </ul>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="features-image col-lg-6"  data-aos-delay="100" ><img src="assets/img/giff.gif" alt=""></div>
+          <div class="col-lg-6">
+
+            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0"  data-aos-delay="200">
+              <i class="fa fa-location-dot flex-shrink-0" style="margin-top: 5%;"></i>
+              <div>
+                <h4>Location</h4>
+                <a href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwTU4vM2D0Ys_LTE8tykwEADaZBeQ&q=nigeria&oq=nigeria&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBwgAEAAYjwIyCggBEC4YsQMYgAQyDQgCEAAYgwEYsQMYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg1MjM4ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8"><p><img src="./assets/img/pngwing.com (11).png" style="width: 30px;"><span></span> Nigeria.</p></a>
+              </div>
+            </div><!-- End Featu1res Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3"  data-aos-delay="300">
+              <i class="fa fa-user flex-shrink-0 " style="margin-top: 4%;"></i>
+              <div>
+                <h4>Hobbies</h4>
+                <p>Problem Sloving, Developing new designs, Critical thinking, Playing Basketball.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3"  data-aos-delay="400">
+              <i class="fa-solid fa-briefcase flex-shrink-0" style="margin-top: 4%;"></i>
+              <div>
+                <h4>Experience</h4>
+                <p>3Years - 4Years.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 ps-0 ps-lg-3"  data-aos-delay="500">
+              <i class="fa fa-book" style="margin-top: 4%;"></i>
+              <div>
+                <h4>Education</h4>
+                <p>Aptech Computer Education.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+          </div>
         </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul class="links">
-            <li><a href="#">Customer Agreement</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">GDPR</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="#">Testimonials</a></li>
-            <li><a href="#">Media Kit</a></li>
-          </ul>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" >
+        <h2>Services</h2>
+        <p>My Services</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6"  data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa fa-code"></i>
+              </div>
+              <a href="front.html" class="stretched-link">
+                <h3>Frontend Development</h3>
+              </a>
+              <p>As a frontend developer, I build interactive and responsive websites that prioritize both functionality and user experience. Using a combination of HTML, CSS, JavaScript, and frameworks like React, I create clean, scalable, and visually appealing web interfaces. </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6"  data-aos-delay="200">
+            <div class="service-item position-relative">
+            +
+              <div class="icon">
+                <i class="fa-solid fa-bug"></i>
+              </div>
+              <a href="problem solving.html" class="stretched-link">
+                <h3>Problem Solving</h3>
+              </a>
+              <p>I thrive on tackling complex challenges and finding innovative solutions. Whether it's debugging code, optimizing performance, or designing intuitive user experiences, I approach every problem with a logical, analytical mindset.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6"  data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa fa-database"></i>
+              </div>
+              <a href="back.html" class="stretched-link">
+                <h3>Backend Development</h3>
+              </a>
+              <p>I specialize in building robust and scalable server-side applications. With expertise in technologies like python databases (SQL & NoSQL).I focus on creating efficient, secure, and high-performance backends.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6"  data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa fa-brush"></i>
+              </div>
+              <a href="uiux.html" class="stretched-link">
+                <h3>UiUx Design</h3>
+              </a>
+              <p>I design intuitive and engaging user interfaces that prioritize both aesthetics and functionality. By focusing on user-centered design principles, I create seamless experiences that are easy to navigate and visually appealing. </p>
+              <a href="uiux.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6"  data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <a href="team.html" class="stretched-link">
+                <h3>Team Co-operation</h3>
+              </a>
+              <p>I believe in the power of collaboration and thrive in team environments. By actively listening, sharing ideas, and working towards common goals, I ensure effective communication and foster a positive, productive atmosphere.</p>
+              <a href="team.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6"  data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="fa fa-laptop"></i>
+              </div>
+              <a href="web.html" class="stretched-link">
+                <h3>Web Application</h3>
+              </a>
+              <p>I specialize in building dynamic, scalable web applications that deliver seamless and interactive user experiences. By leveraging modern technologies and frameworks, I create responsive, high-performance apps that meet user needs and business objectives.</p>
+              <a href="web.html" class="stretched-link"></a>
+            </div>
+          </div><!-- End Service Item -->
+
         </div>
-        <div class="footer-col">
-          <h4>Mini-Statement</h4>
-          <p>
-           I am open to all and any programming Jobs
-            anywhere around the world just place 
-            a call and i will be there.
-          </p>
-          <form action="#">
-            <input type="text" placeholder="your email" required>
-            <button type="submit">Contact</button>
-          </form>
-          <div class="icons">
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/round.jpg!bw700" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center"  data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Let's Build Something Great Together</h3>
+              <p>Are you ready to bring your project to life? Whether you need a stunning website, a robust web application, or innovative design solutions, I'm here to help. Reach out today, and let's discuss how we can create something amazing together!</p>
+              <a class="cta-btn" href="#contact">Begin</a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- footer section ending -->
-    
-    <!-- Creating a back to top button -->
+    </section><!-- /Call To Action Section -->
 
-    <button class="but" ><a href="#home">Back to top</a></button>
+    <!-- Portfolio Section -->
+    <!-- <section id="portfolio" class="portfolio section"> -->
 
+      <!-- Section Title -->
+      <!-- <div class="container section-title" >
+        <h2>Portfolio</h2>
+        <p>Check our Portfolio</p>
+      </div> -->
+      <!-- End Section Title -->
+
+      <!-- <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order"> -->
+
+          <!-- <ul class="portfolio-filters isotope-filters"  data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-product">Card</li>
+            <li data-filter=".filter-branding">Web</li>
+          </ul> -->
+          <!-- End Portfolio Filters -->
+<!-- 
+          <div class="row gy-4 isotope-container"  data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-1.jpg" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-2.jpg" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 1</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-3.jpg" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-4.jpg" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 2</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-6.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-7.jpg" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Product 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Branding 3</h4>
+                <p>Lorem ipsum, dolor sit</p>
+                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div> -->
+            <!-- End Portfolio Item -->
+
+          <!-- </div> -->
+          <!-- End Portfolio Container -->
+
+        <!-- </div> -->
+
+      <!-- </div> -->
+
+    <!-- </section> -->
+    <!-- /Portfolio Section -->
+
+    <!-- Stats Section -->
+    <!-- <section id="stats" class="stats section">
+
+      <div class="container"  data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-lg-5">
+            <img src="assets/img/stats-img.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-6">
+
+            <h3 class="fw-bold fs-2 mb-3">Voluptatem dignissimos provident quasi</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+            </p>
+
+            <div class="row gy-4">
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Happy Clients</strong> <span>consequuntur quae</span></p>
+                  </div>
+                </div>
+              </div> -->
+              <!-- End Stats Item -->
+
+              <!-- <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-journal-richtext flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Projects</strong> <span>adipisci atque cum quia aut</span></p>
+                  </div>
+                </div>
+              </div> -->
+              <!-- End Stats Item -->
+
+              <!-- <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-headset flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Hours Of Support</strong> <span>aut commodi quaerat</span></p>
+                  </div>
+                </div>
+              </div> -->
+              <!-- End Stats Item -->
+
+              <!-- <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-people flex-shrink-0"></i>
+                  <div>
+                    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+                    <p><strong>Hard Workers</strong> <span>rerum asperiores dolor</span></p>
+                  </div>
+                </div> -->
+              <!-- </div> -->
+              <!-- End Stats Item -->
+
+            <!-- </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- /Stats Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section dark-background">
+
+      <img src="assets/img/images (3).jfif" class="testimonials-bg" alt="">
+
+      <div class="container"  data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/adsenew.jpg" class="testimonial-img" alt="">
+                <h3>Aptech Computer Education</h3>
+                <h4>Educational Background</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Aptech Computer Education is a global career education company specializing in training and certification programs across various fields of IT and software development. With a presence in over 40 emerging countries.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/awwwards.jpg" class="testimonial-img" alt="">
+                <h3>Awwwards</h3>
+                <h4>Web-Designers</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Awwwards is a prestigious platform that recognizes and showcases the best in web design, creativity, and innovation. It honors outstanding websites and digital experiences across the globe, celebrating the work of designers, developers, and agencies who push the boundaries of creativity and technology.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/traversy-media.jpg" class="testimonial-img" alt="">
+                <h3>Traversy-media</h3>
+                <h4>Fullstack Developer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Traversy Media is a leading online resource for web development and programming education. Created by Brad Traversy, the platform offers high-quality tutorials, courses, and content that cover a wide range of web development technologies, including HTML, CSS, JavaScript, React, Node.js, and more.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/netN.jpg" class="testimonial-img" alt="">
+                <h3>NetNinja</h3>
+                <h4>Fullstack Developer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The Net Ninja is a popular online learning platform known for its comprehensive and beginner-friendly tutorials on web development and programming. Created by Shaun Pelling, The Net Ninja offers in-depth video courses covering a wide range of topics, including JavaScript, React, Node.js, Vue.js, and more. </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/img/testimonials/download.jfif" class="testimonial-img" alt="">
+                <h3>Code Nepal</h3>
+                <h4>Web Class</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>The platform is particularly known for its easy-to-follow tutorials and real-world examples, which are great for beginners looking to build a solid foundation in coding. Whether you’re just starting or aiming to improve your skills, Coding Nepal offers valuable insights to help you grow as a developer.
+
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" >
+        <h2>Programming Languages</h2>
+        <p>Familiar Programs</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch"  data-aos-delay="100">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/Java.webp" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Java Programming</h4>
+                <span>Another part of my specialization in Programming is the Java programming language.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch"  data-aos-delay="200">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/ci.png" class="img-fluid" alt="">
+                <!-- <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div> -->
+              </div>
+              <div class="member-info">
+                <h4>C# Programming</h4>
+                <span>The C-sharp is another programming language I also have Knowledge about.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch"  data-aos-delay="300">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/react.png" class="img-fluid" alt="">
+                <!-- <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div> -->
+              </div>
+              <div class="member-info">
+                <h4>React</h4>
+                <span>The React and it's library is a Front-end Framework I also have Knowledge about.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch"  data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/team/php.png" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter-x"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>PHP</h4>
+                <span>The PHP is a Back-end  based programming language I also have Knowledge about.</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" >
+        <h2>Contact</h2>
+        <p>Contact Me</p>
+      </div><!-- End Section Title -->
+
+      <div class="container"  data-aos-delay="100">
+
+        <div class="mb-4"  data-aos-delay="200">
+          <iframe src="https://www.google.com/maps?q=Kano+State,+Nigeria&hl=en&z=10&output=embed" width="100%" height="270px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex"  data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Address</h3>
+                <p>Nigeria.</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex"  data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Me</h3>
+                <p>+234 813 078 0366</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex"  data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>Jfnde710@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form"  data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span class="sitename">JonaLL</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <a href="https://www.google.com/search?gs_ssp=eJzj4tDP1TcwTU4vM2D0Ys_LTE8tykwEADaZBeQ&q=nigeria&oq=nigeria&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBwgAEAAYjwIyCggBEC4YsQMYgAQyDQgCEAAYgwEYsQMYgAQyBwgDEAAYgAQyBwgEEAAYgAQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQg1MjM4ajBqNKgCALACAQ&sourceid=chrome&ie=UTF-8"><p><img src="assets/img/pngwing.com (11).png" style="width:25px; height: 20px; margin-right: 2%;">Nigeria</p></a>
+              <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TdISTfOMzRg9GJLTCvKTE4EADUKBZM&q=africa&oq=afr&gs_lcrp=EgZjaHJvbWUqCggBEC4YsQMYgAQyBggAEEUYOTIKCAEQLhixAxiABDINCAIQABiDARixAxiABDINCAMQLhiDARixAxiABDIHCAQQABiABDIQCAUQLhjHARixAxjRAxiABDIGCAYQRRg9MgYIBxBFGD3SAQgzMTk3ajBqNKgCALACAA&sourceid=chrome&ie=UTF-8"><p><img src="assets/img/map afric.png" style="width:30px; height: 30px; margin-right: 2%;">Africa</p></a>
+              <p class="mt-3"><strong>Phone:</strong> <span>+234 813 078 0366 </span></p>
+              <p><strong>Email:</strong> <span><a href="mailto:Jfnde710@gmail.com">Jfnde710@gmail.com</a></span></p>
+            </div>
+            <div class="social-links d-flex mt-4">
+              <a href=""><i class="bi bi-twitter-x"></i></a>
+              <a href=""><i class="bi bi-facebook"></i></a>
+              <a href=""><i class="bi bi-instagram"></i></a>
+              <a href=""><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> About us</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Services</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Design</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Web Development</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#"> Product Management</a></li>
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Marketing</a></li> -->
+              <!-- <li><i class="bi bi-chevron-right"></i> <a href="#"> Graphic Design</a></li> -->
+            </ul>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-12 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+              <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+            </form>
+          </div> -->
+
+        </div>
+      </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+
+    <div class="copyright">
+      <div class="container text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">JonaLL</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+         
+          Designed by <a href="#">Jonathan Festus</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
