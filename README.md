@@ -1,4 +1,4 @@
-# 🌐 Jonathan Festus – Frontend Developer Portfolio
+# 🌐 Jonathan Elochukwu Festus – Frontend Developer Portfolio
 
 Welcome to my personal portfolio website! This is where I showcase my work, skills, and passion for building clean, modern, and user-friendly digital experiences.
 
